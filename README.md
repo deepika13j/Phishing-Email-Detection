@@ -30,22 +30,22 @@ The project includes an interactive Streamlit application and an evaluation dash
 ## 📸 Project Screenshots
 
 ### 1. Email Input
-![Email Input](screenshots/app_input.png)
+![Email Input](app_input.png)
 
 ### 2. Email Analysis Results
-![Email Analysis](screenshots/app_analysis.png)
+![Email Analysis](app_analysis.png)
 
 ### 3. Analysis Report
-![Analysis Report](screenshots/app_report.png)
+![Analysis Report](app_report.png)
 
 ### 4. Confusion Matrix
-![Confusion Matrix](screenshots/dashboard_confusion_matrix.png)
+![Confusion Matrix](https://github.com/deepika13j/Phishing-Email-Detection/blob/main/Confusion%20matrix.png?raw=true)
 
 ### 5. Dataset Class Distribution
-![Dataset Class Distribution](screenshots/dashboard_class_distribution.png)
+![Class Distribution](https://github.com/deepika13j/Phishing-Email-Detection/blob/main/Class%20distribution.png?raw=true)
 
-### 6. Model Performance
-![Model Performance](screenshots/dashboard_performance.png)
+### 6. Model Performance Metrics
+![Performance Metrics](https://github.com/deepika13j/Phishing-Email-Detection/blob/main/Performance%20metrics.png?raw=true)
 
 ## 📊 Model Evaluation
 
