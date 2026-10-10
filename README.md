@@ -1,9 +1,22 @@
-# Phishing Email Detection Using Machine Learning
+# 🛡️ Email Threat Detector
 
-## Project Overview
-This project uses Machine Learning and Natural Language Processing (NLP) to classify email text into dataset labels. It includes an interactive Streamlit application and a model evaluation dashboard.
+A machine learning-based email classification project that analyzes email text using TF-IDF, Logistic Regression, suspicious keyword matching, and basic URL checks.
 
-## Technologies Used
+The project includes an interactive Streamlit application and an evaluation dashboard to explore model performance.
+
+## ✨ Features
+
+- **Email Classification:** Predicts the dataset class of an email using machine learning.
+- **Confidence Score:** Displays the model's estimated probability for its prediction.
+- **Suspicious Keyword Detection:** Identifies potentially concerning phrases in email text.
+- **URL Analysis:** Checks for basic URL patterns.
+- **Evaluation Dashboard:** Displays model accuracy and a confusion matrix.
+- **Performance Metrics:** Shows precision, recall, and F1-score.
+- **Dataset Distribution:** Visualizes the number of emails in each class.
+- **Downloadable Report:** Allows prediction results to be downloaded as a CSV file.
+
+## 🛠️ Technologies Used
+
 - Python
 - Pandas and NumPy
 - Scikit-learn
@@ -11,37 +24,89 @@ This project uses Machine Learning and Natural Language Processing (NLP) to clas
 - Logistic Regression
 - Streamlit
 - Matplotlib
+- Seaborn
+- Joblib
 
-## Features
-- Email text classification
-- Prediction confidence display
-- Suspicious keyword analysis
-- URL analysis
-- Model accuracy evaluation
+## 📸 Project Screenshots
+
+### 1. Email Input
+![Email Input](screenshots/app_input.png)
+
+### 2. Email Analysis Results
+![Email Analysis](screenshots/app_analysis.png)
+
+### 3. Analysis Report
+![Analysis Report](screenshots/app_report.png)
+
+### 4. Confusion Matrix
+![Confusion Matrix](screenshots/dashboard_confusion_matrix.png)
+
+### 5. Dataset Class Distribution
+![Dataset Class Distribution](screenshots/dashboard_class_distribution.png)
+
+### 6. Model Performance
+![Model Performance](screenshots/dashboard_performance.png)
+
+## 📊 Model Evaluation
+
+The model achieved approximately **98.91% accuracy** on the test split used during evaluation.
+
+The dashboard provides:
+- Accuracy
 - Confusion matrix
-- Dataset class distribution
-- Precision, recall, and F1-score graphs
-- Downloadable prediction results
+- Classification report
+- Precision
+- Recall
+- F1-score
 
-## Model Performance
-The current test accuracy is approximately 98.91%. Results may change when the dataset or model is updated. Accuracy alone does not establish phishing detection reliability.
+Accuracy alone does not establish that a model can reliably identify phishing emails. Performance depends on the dataset, its labels, and how representative the test data is.
 
-## Dataset
-The project combines CEAS_08 and Enron email datasets. The model currently predicts dataset labels 0 and 1. These labels should not be interpreted as safe and phishing without verifying the original dataset definitions.
+## 📂 Project Structure
 
-## How to Run
+```text
+Phishing-Email-Detection/
+├── app.py
+├── dashboard.py
+├── requirements.txt
+├── README.md
+├── screenshots/
+├── data/
+│   └── processed/
+├── models/
+└── results/
+```
 
-1. Install the dependencies:
+## 🚀 Installation and Usage
 
-   `pip install -r requirements.txt`
+### 1. Clone the repository
 
-2. Start the email detection application:
+```bash
+git clone https://github.com/deepika13j/Phishing-Email-Detection.git
+cd Phishing-Email-Detection
+```
 
-   `streamlit run app.py`
+### 2. Install dependencies
 
-3. Start the evaluation dashboard in another terminal:
+```bash
+pip install -r requirements.txt
+```
 
-   `streamlit run dashboard.py`
+### 3. Run the email analysis application
 
-## Disclaimer
-This project is intended for educational purposes. Predictions are automated estimates and should not be treated as proof that an email is safe or malicious.
+```bash
+streamlit run app.py
+```
+
+### 4. Run the evaluation dashboard
+
+```bash
+streamlit run dashboard.py
+```
+
+**Note:** The application and dashboard require the trained model and processed dataset at the file paths configured in the Python scripts. The dataset and model must be available locally for the commands to work.
+
+## ⚠️ Disclaimer
+
+This project is intended for educational purposes. Predictions, confidence scores, keyword matches, and URL indicators may be incorrect.
+
+Dataset labels should not be interpreted as definitively safe or phishing unless their original definitions have been verified. Do not rely on this application alone to decide whether an email is safe.
